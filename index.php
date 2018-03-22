@@ -1,3 +1,4 @@
 <?php
-  echo "I'm Nanter";
+  $name="I'm Nanter";
+  echo $name;
 ?>
