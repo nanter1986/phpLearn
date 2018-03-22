@@ -1,4 +1,6 @@
 <?php
   $name="I'm Nanter";
-  echo $name;
+  $separate=" & ";
+  $name2="I'm Alina";
+  echo $name . $separate . $name2;
 ?>
