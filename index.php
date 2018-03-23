@@ -5,4 +5,7 @@
   $longString=substr($name,11,5) . $separate . ucwords($name2);
   $replace=str_replace("I'm","Here is",$longString);
   echo strtolower($replace);
+  #######################
+  $theElement=htmlentities("<font>");
+  echo "Element<font> is &rarr; " . $theElement;
 ?>
