@@ -1,8 +1,9 @@
 <?php
+  $myArray=array("I'm Nanter and I mean it!"," & ","i'm alina");
   $name="I'm Nanter and I mean it!";
   $separate=" & ";
   $name2="i'm alina";
-  $longString=substr($name,11,5) . $separate . ucwords($name2);
+  $longString=substr($myArray[0],11,5) . $separate . ucwords($myArray[2]);
   $replace=str_replace("I'm","Here is",$longString);
   echo strtolower($replace);
   #######################
