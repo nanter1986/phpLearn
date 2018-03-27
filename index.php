@@ -1,9 +1,9 @@
 <?php
-  $myText="Nanter and Alina!";
-  $explodedText=explode(" ",$myText,3);
-  foreach($explodedText as $e){
+  $char=array("a","b","c","arrayInside"=>array("x","y","z"));
+  foreach($char as $e){
+    if(is_array($e)){
+      continue;
+    }
     echo $e . "\n";
   }
-  $implodedText=implode(", ",$explodedText);
-  echo $implodedText;
 ?>
