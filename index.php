@@ -1,6 +1,5 @@
 <?php
-  $aString="some text";
-  echo "show $aString";
-  echo "\n";
-  echo 'show $aString';
+  echo "show $varInc \n";
+  include "includeMe.php";
+  echo "show $varInc";
 ?>
