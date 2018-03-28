@@ -1,3 +1,7 @@
 <?php
-  $varInc="<h1>I'm from the included file</h1>";
+  $varInc=
+  "<form method=get action='newPage.php'>
+    <input type='text' name='firstname'>
+    <input type='submit' value='submit firstname'>
+  </form>";
 ?>
