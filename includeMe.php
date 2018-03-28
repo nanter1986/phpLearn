@@ -1,3 +1,3 @@
 <?php
-  $varInc="I'm from the included file";
+  $varInc="<h1>I'm from the included file</h1>";
 ?>
