@@ -2,13 +2,12 @@
   echo "show $varInc \n";
   include "includeMe.php";
   echo "show $varInc";
-  $variable="house";
-  $notset=NULL;
-  if(isset($variable)){
-    echo "<strong>variable is set!</strong>";
+  function boldSomething($text){
+    echo "<strong>" . $text . "</strong>";
   }
-  if(isset($notset)){
-    echo "<strong>notset is set!</strong>";
+  if(function_exists("boldSomething")){
+    echo "boldSomething exists";
   }
-  echo "<br>" . isset($variable) . " nanter";
+
+  echo boldSomething("im hot");
 ?>
