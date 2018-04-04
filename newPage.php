@@ -23,6 +23,7 @@
     echo nl2br("\nunsetting $_SESSION[$s]");
     unset($_SESSION[$s]);
   }
+  echo nl2br("\n" . $_SERVER["REQUEST_METHOD"]);
 
 
 ?>
