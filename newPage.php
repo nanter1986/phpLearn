@@ -24,6 +24,7 @@
     unset($_SESSION[$s]);
   }
   echo nl2br("\n" . $_SERVER["REQUEST_METHOD"]);
+  echo nl2br("\n" . $_SERVER["SCRIPT_FILENAME"]);
 
 
 ?>
