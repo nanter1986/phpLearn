@@ -25,6 +25,7 @@
   }
   echo nl2br("\n" . $_SERVER["REQUEST_METHOD"]);
   echo nl2br("\n" . $_SERVER["SCRIPT_FILENAME"]);
+  echo nl2br("\n" . $_COOKIE["nanter1986"]);
 
 
 ?>
