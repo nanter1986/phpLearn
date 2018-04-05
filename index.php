@@ -5,7 +5,7 @@
     echo 'session started';
   }
 
-  $aVar0=file_get_contents("includeMe.php");
+  $aVar0=file_get_contents("hhh.html");
   $aVar=file_get_contents("includeMe2.html");
   echo "$aVar0 \n";
   echo "$aVar \n";
