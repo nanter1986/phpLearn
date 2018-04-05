@@ -7,11 +7,9 @@
   <title>Document</title>
 </head>
 <body>
-  <form method="post" action="newPage.php">
-      first<input type="text" name="firstname">
-      last<input type="text" name="lastname">
-      age<input type="text" name="age">
-      <input type="submit" value="submit all">
+  <form method="post" action="upload.php" enctype="multipart/form-data">
+      first<input type="file" name="uploadedFile">
+      <input type="submit" value="submit file!">
 
   </form>
 </body>
