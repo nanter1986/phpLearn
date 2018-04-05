@@ -1,24 +1,3 @@
-<?php
-  setcookie("nanter1986", "awesome", time()+60*60*5);
-  if (!isset($_SESSION)) {
-      session_start();
-      echo 'session started';
-  }
-
-  $aVar0=file_get_contents("hhh.html");
-  $aVar=file_get_contents("includeMe2.html");
-  echo "$aVar0 \n";
-  echo "$aVar \n";
-  $now= mktime(23, 0, 0, 7, 13, 1986);
-  echo date("F j, y, g:i a", $now);
-  $_SESSION['ability']='im awesome';
-  $_SESSION['weakness']='cereal';
-  setcookie("nanter1986", "", time-3600);
-  $headers="";
-  $params="-fnanter1986@gmail.com";
-  mail("nanter1986@gmail.com", "index", "something", $headers, $params);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,8 +15,14 @@
     <![endif]-->
   </head>
   <body>
-    <a href="addProduct.php">add product</a>
-    <a href="viewAllProducts.php">view all products</a>
+    <form class="" action="productReady.php" method="post">
+      <span class="label label-default">id</span><input type="text" name="id" value="">
+      <span class="label label-default">name</span><input type="text" name="name" value="">
+      <span class="label label-default">price</span><input type="text" name="price" value="">
+      <span class="label label-default">image</span><input type="text" name="image" value="">
+      <button type="submit" name="button">submit product</button>
+    </form>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
