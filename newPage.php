@@ -23,9 +23,10 @@
     echo nl2br("\nunsetting $_SESSION[$s]");
     unset($_SESSION[$s]);
   }
+  
   echo nl2br("\n" . $_SERVER["REQUEST_METHOD"]);
   echo nl2br("\n" . $_SERVER["SCRIPT_FILENAME"]);
-  echo nl2br("\n" . $_COOKIE["nanter1986"]);
+  echo nl2br("\n" . "cookie value:" . $_COOKIE["nanter1986"]);
 
 
 ?>

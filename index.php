@@ -13,6 +13,7 @@
   echo date("F j, y, g:i a" ,$now);
   $_SESSION['ability']='im awesome';
   $_SESSION['weakness']='cereal';
+  setcookie("nanter1986","",time-3600);
 
 
 ?>
