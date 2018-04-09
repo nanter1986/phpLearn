@@ -7,12 +7,20 @@ if ($conn->connect_error) {
     echo "DONE!";
 }
 echo nl2br("calculations start here\n");
-$query="SELECT COUNT(id) FROM products";
+$query="SELECT * FROM products";
+$result=mysqli_query($conn,$query);
+while($array1=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+  foreach ($array1 as $key => $value) {
+    echo $value . "/";
+  }
+  echo "<br>";
+
+}
 echo nl2br("query ok\n");
 
-$count=$conn->query($query);
+
 echo nl2br("everything counted\n");
-echo nl2br("The count is: $count->num_of_rows");
+
 
 
 ?>

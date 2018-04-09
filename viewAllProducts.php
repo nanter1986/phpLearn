@@ -15,7 +15,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="panel panel-default">
       <h1>Products</h1>
       <?php
         require("displayProducts.php");
