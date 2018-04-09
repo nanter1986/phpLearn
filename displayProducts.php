@@ -21,10 +21,12 @@ function divify($arrayInput){
   $price=$arrayInput['price'];
   $id=$arrayInput['id'];
   $image_path=$arrayInput['image_path'];
-  $string="<div>" .
-            "<h1>$name</h1>" .
-            "<h2>$price</h2>" .
-            "<img src=$image_path alt=$name>" .
+  $string="<div class='panel panel-primary col-md-4'>" .
+            "<div class='panel-heading'>$name</div>" .
+              "<div class='panel-body'>" .
+              "<img src=$image_path alt=$name>" .
+              "</div>" .
+            "<div class='panel-footer'>$price</div>" .
             "</div>";
   echo $string;
 }
