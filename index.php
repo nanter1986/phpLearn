@@ -5,7 +5,7 @@
       echo 'session started';
   }
 
-  $aVar0=file_get_contents("hhh.html");
+  $aVar0=file_get_contents("hhh.php");
   $aVar=file_get_contents("includeMe2.html");
   echo "$aVar0 \n";
   echo "$aVar \n";
@@ -36,7 +36,7 @@
     <![endif]-->
   </head>
   <body>
-    
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

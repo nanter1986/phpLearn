@@ -37,7 +37,15 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="login.php">Log In</a></li>
+          <?php
+            if(isset($_COOKIE['userAth'])){
+              echo "<li><a href='login.php'>Log In</a></li>";
+            }else{
+              $auth_level=$_COOKIE['userAth'];
+              echo "<li><span class='label label-default'>$auth_level</span></li>";
+            }
+          ?>
+
           <li><a href="addProduct.php">add product</a></li>
           <li><a href="viewAllProducts.php">view all products</a></li>
 
